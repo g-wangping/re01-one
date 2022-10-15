@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>王平</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: rgb(156, 147, 147);
+      }
+      /** {
+        border: 3px solid rgb(179, 159, 159);
+      }*/
+      .yinying {
+        box-shadow: rgba(192, 23, 23, 0.155) 7px 7px 7px -7px,
+          rgba(20, 1, 1, 0.14) 0px 7px 7px 7px,
+          rgba(42, 5, 5, 0.062) 7px 7px 7px 7px;
+      }
+      .yinyinga {
+        box-shadow: rgba(45, 40, 40, 0.155) 7px 7px 7px -7px,
+          rgba(128, 99, 99, 0.14) 0px 7px 7px 7px,
+          rgba(92, 74, 74, 0.062) 7px 7px 7px 7px;
+      }
+
+      .flex {
+        display: flex;
+      }
+      .daise {
+        background-color: white;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .mg8 {
+        margin: 10px;
+      }
+      .mgr8 {
+        margin-right: 8px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+      .mgl8 {
+        margin-left: 60px;
+      }
+      .word {
+        background: #e5e5e5;
+        text-align: center;
+        line-height: 30px;
+        font-size: 20px;
+      }
+      .content {
+        position: absolute;
+        top: 50%;
+        margin-top: -50px;
+      }
+      /* 当屏幕宽度小于600px时要改变的css */
+      @media (max-width: 600px) {
+        /* 小屏幕上取消侧边栏，后面学js时会教怎么弹出 */
+        .cebianlan {
+          display: none;
+        }
+        /* 内容栏和数据栏flex方向改为竖向 */
+        .zhuquyu {
+          flex-direction: column;
+        }
+        .shuJuQu {
+          flex-direction: column;
+        }
+        /* 右区加左外边距 */
+        .youqu {
+          margin-left: 8px;
+        }
+        /* 数据块外边距，大小改为自动宽高 */
+        .neirong {
+          margin: 0 0 8px;
+          flex: auto;
+        }
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <!--主侧边-->
+    <div style="width: 200px; height: 600px" class="baise cebianlan">
+      <!--头像栏-->
+      <div style="height: 60px" class="baise yinying flex">
+        <div style="width: auto; height: 55px" class="yinying mgl8">
+          <img
+            style="
+              padding: 1px;
+              align-items: center;
+              justify-content: center;
+              border-bottom: 1px solid #999;
+            "
+            class="flex"
+            src="https://tupian.qqw21.com/article/UploadPic/2020-6/202061222303962445.jpg"
+            width="50px"
+          />
+        </div>
+        <div class="flex column">
+          <div>王</div>
+          <div>平</div>
+        </div>
+      </div>
+      <!--个人介绍-->
+      <div class="flex mgr8">
+        <div
+          style="
+            width: 200px;
+            height: 300px;
+            font-size: 16px;
+            writing-mode: vertical-rl;
+          "
+          class="mgr8 mgt8"
+        >
+          <p>
+            我来自魔幻美丽的山城重庆，在一个偶然的情况下开始学习编程,这是我开始学习写的第一个网站。希望我能够一直坚持学习下去。加油
+            ！ ！
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--主区域-->
+    <div class="flex1 column zhuquyu">
+      <!--头部栏-->
+      <div style="height: 60px; z-index: 2" class="baise yinying flex">
+        <p style="font-size: 30px; z-index: 3" class="neirong mgt8 mgl8">
+          我的个人网站
+        </p>
+      </div>
+      <!--内容区-->
+      <div class="flex1 column" style="overflow: auto">
+        <div style="height: 160px" class="flex baise mgt8 yinying neiRong">
+          <div
+            style="
+              height: 120px;
+              width: 80px;
+              background-color: rgb(171, 143, 139);
+              overflow: hidden;
+            "
+            class="baise mg8 neiRong yinyinga word"
+          >
+            <a
+              href="http://www.cq.gov.cn/zjcq/"
+              style="font-size: 20px; writing-mode: vertical-lr"
+              >山城重庆</a
+            >
+          </div>
+          <div
+            style="
+              height: 120px;
+              width: 80px;
+              background-color: rgb(101, 101, 177);
+            "
+            class="baise mg8 neiRong yinyinga word"
+          >
+            <a></a>
+          </div>
+        </div>
+        <div style="height: 160px" class="baise mgt8 yinying neiRong"></div>
+        <div style="height: 160px" class="baise mgt8 yinying neiRong"></div>
+        <div style="height: 160px" class="baise mgt8 yinying neiRong"></div>
+        <div style="height: 160px" class="baise mgt8 yinying neiRong"></div>
+        <div style="height: 160px" class="baise mgt8 yinying neiRong"></div>
+      </div>
+    </div>
+  </body>
+</html>
