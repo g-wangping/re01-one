@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wp大浮</title>
+    <link rel="manifest" href="/manifest.json" />
     <style>
       body {
         margin: 0;
@@ -171,5 +172,12 @@
         </div>
       </div>
     </div>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker.register("sw.js");
+        });
+      }
+    </script>
   </body>
 </html>
